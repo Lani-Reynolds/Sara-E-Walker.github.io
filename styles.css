@@ -9,7 +9,8 @@
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: scroll;
-    padding: 5%
+    padding: 5%;
+    text-align: center;
 }
 
 body {
@@ -70,7 +71,9 @@ body {
 .square_two {
     background-color: #0D2E09;
     color: #879A76;
-    text-align: center;
+    display: table-cell; 
+    text-align: center; 
+    vertical-align: middle; 
 }
 
 .about_me {
@@ -88,6 +91,10 @@ body {
 }
 
 ul {
+    display: grid; 
+    place-items: center; 
+}
+
+sub {
     text-align: center;
-    list-style-position: inside;
 }
