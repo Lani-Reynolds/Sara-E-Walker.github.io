@@ -1,0 +1,78 @@
+﻿body {
+    background: url('../images/background.jpg');
+    margin: auto;
+    font-family: Helvetica, sans-serif;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+}
+
+.content {
+    display: block;
+    margin: 0 auto;
+    width: 540px;
+}
+
+a:link, a:visited {
+    color: #373D35;
+    text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+    padding: 65px 0;
+}
+
+a {
+    padding: 75px 0;
+    display: inline-block;
+    transition: padding 0.5s;
+}
+
+main div {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+    border-radius: 10%;
+    width: 250px;
+    height: 250px;
+}
+
+.top.left, .bottom.right {
+    float: left;
+    background-image: linear-gradient(to bottom right, #6f5e5c, #c6caed);
+}
+
+.bottom.left, .top.right {
+    float: left;
+    background-image: linear-gradient(to bottom right, #ada8be, #4a5240);
+}
+
+#row2 {
+    clear: left;
+}
+
+/* Clear floats after the columns */
+/*main::after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+/*@media screen and (max-width: 600px) {
+    .side, .middle {
+        width: 100%;
+    }
+}*/
+
+ul {
+    display: grid;
+    place-items: center;
+}
+
+sub {
+    text-align: center;
+}

@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../images/bricks(edit).jpg');
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+.about_me {
+    padding: 5px;
+    background-color: #D5896F;
+    font-size: 50px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    margin-top: 2%;
+    float: left;
+    padding: 10px;
+}
+  
+/* Left and right column */
+.side {
+    height: 100px;
+    background-color: #0D3A1B;
+    width: 25%;
+}
+  
+  /* Middle column */
+.middle {
+    padding: 0;
+    background-color: #8FA063;
+    color: #373D35;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+}
+  
+  /* Clear floats after the columns */
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.side, .middle {
+      width: 100%;
+    }
+}
+
+ul {
+    display: grid; 
+    place-items: center; 
+}
+
+sub {
+    text-align: center;
+}
