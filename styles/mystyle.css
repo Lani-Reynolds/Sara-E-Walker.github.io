@@ -1,37 +1,44 @@
-﻿body {
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
     background: url('../images/background.jpg');
     margin: auto;
     font-family: Helvetica, sans-serif;
 }
 
-img {
+main {
+    color: #373D35;
+}
+
+#logo {
     display: block;
     margin: 20px auto;
     width: 400px;
 }
 
-.content {
-    display: block;
+.main_screen {
     margin: 0 auto;
     width: 540px;
 }
 
-a:link, a:visited {
+.main_link:link, .main_link:visited {
     color: #373D35;
     text-decoration: none;
 }
 
-a:hover, a:active, a:focus {
+.main_link:hover, .main_link:active, .main_link:focus {
     padding: 65px 0;
 }
 
-a {
+.main_link {
     padding: 75px 0;
     display: inline-block;
-    transition: padding 0.5s;
+    transition: padding 0.25s;
 }
 
-main div {
+.main_grid {
     text-align: center;
     font-size: 30px;
     margin: 10px;
@@ -54,25 +61,32 @@ main div {
     clear: left;
 }
 
-/* Clear floats after the columns */
-/*main::after {
-    content: "";
-    display: table;
-    clear: both;
-}*/
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-/*@media screen and (max-width: 600px) {
-    .side, .middle {
-        width: 100%;
-    }
-}*/
-
-ul {
-    display: grid;
-    place-items: center;
+button {
+    width: 200px;
+    height: 50px;
+    margin: 5px 0 0 5px;
+    border: 2px solid #6f5e5c;
+    border-radius: 12px;
+    background-image: linear-gradient(to bottom right, #6f5e5c, #c6caed);
+    color: #373D35;
 }
 
-sub {
+button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, #594c4a, #b1b7e7);
+}
+
+#title {
     text-align: center;
+    margin-top: 50px
+}
+
+.content {
+    margin: auto;
+    background-color: rgba(162, 132, 151, 0.5);
+    width: 50%;
+}
+
+.content ul {
+    list-style-type: none;
 }
